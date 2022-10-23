@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     width: 35%;
-    height: 30em;
+    padding: 20px;
     background-color: #43747e;
 }
 #piePagina{
@@ -27,24 +27,26 @@
 }
 #Normal{
     display: flex;
+    flex-wrap: wrap;
     margin: 1em;
 }
 #Normal > p{
+    flex-basis: 10%;
     text-align: center;
     background-color: white;
-    width: 5%;
     height: 30px;
     font-size: 20px;
     border: 1px solid black;
 }
 #Ordenado{
     display: flex;
+    flex-wrap: wrap;
     margin: 1em;
 }
 #Ordenado > p{
+    flex-basis: 10%;
     text-align: center;
     background-color: white;
-    width: 5%;
     height: 30px;
     font-size: 20px;
     border: 1px solid black;
