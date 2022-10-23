@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#encabezado{
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 1em;
+    background-color: #2d4e56;
+}
+#contenedor{
+    margin: 0 auto;
+    width: 35%;
+    height: 30em;
+    background-color: #43747e;
+}
+#piePagina{
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #59a5af;
+}
+#Normal{
+    display: flex;
+    margin: 1em;
+}
+#Normal > p{
+    text-align: center;
+    background-color: white;
+    width: 5%;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+#Ordenado{
+    display: flex;
+    margin: 1em;
+}
+#Ordenado > p{
+    text-align: center;
+    background-color: white;
+    width: 5%;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.boton{
+    display: flex;
+    justify-content: end;
+}
+input{
+    width: 95%;
+    height: 2em;
+    border: 2px solid black;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+h3{
+    margin-top: 1em;
+    margin-left: 0.8em;
+}
+button{
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #004855;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #009ca2;
+}

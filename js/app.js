@@ -1,9 +1,5 @@
-const arreglo1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-console.log(arreglo1);
-
-function promedio(){
-    let suma = arreglo1.reduce((previous, current) => current += previous);
-    let promedio = suma/arreglo1.length;
-    return promedio;
+// Generación de un arreglo aleatorio
+const arregloAleatorio = []
+for (let i = 0; i<20; i++){
+    arregloAleatorio.push(Math.floor(Math.random() * (100 -1)+1))
 }
-promedio(arreglo1);
