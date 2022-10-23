@@ -11,6 +11,9 @@
     background-color: #2d4e56;
 }
 #contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 0 auto;
     width: 35%;
     height: 30em;
