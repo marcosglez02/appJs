@@ -8,30 +8,35 @@
     <link rel="stylesheet" href="/css/estilosAppJs.css">
     <script src="/js/app.js"></script>
 </head>
-<body>
+<body onload="calcular()">
     <header id="encabezado">
         <h1>Práctica 04 - Funciones y arreglos en JavaScript</h1>
     </header>
-    <div id="contenedor">
-        <h3>Arreglo</h3>
-        <div id="Normal">
-            
-         </div>
-        <h3>Arreglo ordenado</h3>
-        <div id="Ordenado">
+    <main>
+        <div id="contenedor">
+            <h3>Arreglo</h3>
+            <div id="Normal">
+                
+             </div>
+            <h3>Arreglo ordenado</h3>
+            <div id="Ordenado">
+                
+            </div>
+            <h3>Promedio</h3>
+            <input type="text" id="pr" readonly>
+            <h3 style="margin-top: 1em;">Cantidad de pares</h3>
+            <input type="text" id="par" readonly>
+            <div class="boton">
+                <button id="accion" onclick="calcular()">Generar</button>
+            </div>
             
         </div>
-        <h3>Promedio</h3>
-        <input type="text" id="pr" readonly>
-        <h3>Cantidad de pares</h3>
-        <input type="text" id="par" readonly>
-        <div class="boton">
-            <button onclick="calcular()">Generar</button>
-        </div>
-        
-    </div>
+    </main>
+    
     <footer id="piePagina">
-        <h2>2022, Marcos Abraham González Páez. Todos los derechos reservados</h2>
+        <h2>©2022, Marcos Abraham González Páez. Todos los derechos reservados</h2>
     </footer>
+    
 </body>
+
 </html>
