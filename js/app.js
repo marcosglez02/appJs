@@ -64,3 +64,60 @@ function calcular(){
     imprimirArreglos(arregloOrdenado, document.getElementById('Ordenado'));
 }
 
+// Generación de objetos
+function generar(){
+    let limite = document.getElementById('limite').value;
+    let lstNumeros = document.getElementById('idNumeros');
+    lstNumeros.innerHTML = "";
+    let arreglo = [];
+    let pares = 0;
+    let impares = 0;
+
+    // Generar arreglo aleatorio
+    for (let i = 0; i<limite; i++){
+        arreglo.push(Math.floor(Math.random() * (limite -1)+1));
+        
+    }
+    // Ordenarlo
+    arreglo.sort(function(a, b) {return b - a});
+
+    // Imprimir el contenido
+    for(let i=0; i<limite; ++i){
+        lstNumeros.options[i] = new Option(arreglo[i],'texto',arreglo[i]);
+    }
+
+    // Conocer el porcentaje de pares e impares
+    for (let i = 0; i<limite; i++){
+        if(arreglo[i]%2 == 0){
+            pares++;
+        }else{
+            impares++;
+        }
+        
+    }
+    // Imprimir el porcentaje de pares e impares
+    pares = (pares * 100) / limite;
+    let paresImprimir = document.getElementById('pares');
+    paresImprimir.innerHTML = pares + "%";
+
+    impares = (impares * 100) / limite;
+    let imparesImprimir = document.getElementById('impares');
+    imparesImprimir.innerHTML = impares + "%";
+    
+    // Conocer si es simétrico
+    let simetrico = document.getElementById('simetrico')
+    if(pares>impares){
+        if(pares - impares > 25){
+            simetrico.innerHTML = "No es simetrico";
+        }else{
+            simetrico.innerHTML = "Es simetrico";
+        }
+    }else{
+        if(impares - pares > 25){
+            simetrico.innerHTML = "No es simetrico";
+        }else{
+            simetrico.innerHTML = "Es simetrico";
+        }
+    }
+
+}

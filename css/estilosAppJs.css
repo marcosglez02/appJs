@@ -63,6 +63,14 @@
     display: flex;
     justify-content: end;
 }
+.boton2{
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 60%;
+    font-size: 20px;
+    background-color: #004855;
+    cursor: pointer;
+}
 input{
     width: 100%;
     height: 2em;
@@ -74,7 +82,6 @@ input{
 button{
     margin-top: 1em;
     width: 100px;
-    height: 50px;
     font-size: 20px;
     background-color: #004855;
     cursor: pointer;
@@ -88,4 +95,12 @@ main{
     align-items: center;
     width: 100%;
     min-height: calc(100vh - 400px);
+}
+@media(max-width:1200px){
+    main{
+        flex-direction: column;
+    }
+    #contenedor{
+        margin-bottom: 1em;
+    }
 }
